@@ -209,8 +209,12 @@ public class OramClient {
 	}
 
 	public static void main(String[] args) throws OverflowException{
-		String url = "http://localhost:8000/oram";
-		OramClient oc = new OramClient(1,1024*4,16,128,8,null);
+		String url = args[4];
+		int recursion = Integer.parseInt(args[0]);
+		int leafNum = Integer.parseInt(args[1]);
+		int securePara = Integer.parseInt(args[2]);
+		int blockSize = Integer.parseInt(args[3]);
+		OramClient oc = new OramClient(recursion,leafNum,securePara,blockSize/8,8,url);
 		System.out.println(oc.nodeSize);
 		System.out.println("ORAM initialized!");
 		for(OramTree t:oc.trees){

@@ -2,20 +2,19 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/http-20070405.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/deploy-1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/httpcomponents-client-4.3.3/lib/commons-codec-1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/httpcomponents-client-4.3.3/lib/commons-logging-1.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/httpcomponents-client-4.3.3/lib/fluent-hc-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/httpcomponents-client-4.3.3/lib/httpclient-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/httpcomponents-client-4.3.3/lib/httpclient-cache-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/httpcomponents-client-4.3.3/lib/httpcore-4.3.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/httpcomponents-client-4.3.3/lib/httpmime-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/commons-io-2.4-bin/commons-io-2.4/commons-io-2.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/commons-io-2.4-bin/commons-io-2.4/commons-io-2.4-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/commons-io-2.4-bin/commons-io-2.4/commons-io-2.4-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/commons-io-2.4-bin/commons-io-2.4/commons-io-2.4-tests.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chen/lib/commons-io-2.4-bin/commons-io-2.4/commons-io-2.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/fluent-hc-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/http-20070405.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/httpclient-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/httpclient-cache-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/httpmime-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/Oram/lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/commons-io-2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/commons-io-2.4/commons-io-2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/commons-io-2.4/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/commons-io-2.4/commons-io-2.4-tests.jar"/>
+	<classpathentry kind="lib" path="/home/chen/classes/crypto/commons-io-2.4/commons-io-2.4-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

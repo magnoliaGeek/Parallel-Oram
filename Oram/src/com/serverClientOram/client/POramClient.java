@@ -310,11 +310,15 @@ public class POramClient extends OramClient {
 	
 	public static void main(String[] args){
 		System.out.println(java.lang.Runtime.getRuntime().maxMemory()/(1024*1024*1024)); 
-		int blockSize = 1024;
-		int nReq = 1024;
-		int nBatch = 1024/nReq;
-		String url = "http://localhost:8000/oram";
-		POramClient oc = new POramClient(nReq,1,1024*4,16,blockSize/8,8,null);
+		int blockSize = Integer.parseInt(args[0]);//1024;
+		int nReq = Integer.parseInt(args[1]);//1024;
+		int nBatch = Integer.parseInt(args[2]);//1024/nReq;
+		String url = args[6];
+		POramClient oc = new POramClient(nReq,
+				Integer.parseInt(args[3]),//1,number of recursion
+				Integer.parseInt(args[4]),//1024*4, number of leafs 
+				Integer.parseInt(args[5]),//16, secure parameter
+				blockSize/8,8,url);
 		System.out.println("oram initialized!");
 //		System.out.println(oc.dos.ram.length);
 		ArrayList<Boolean> wops = new ArrayList<Boolean>();

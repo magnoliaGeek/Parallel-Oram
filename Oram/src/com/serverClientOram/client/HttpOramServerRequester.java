@@ -36,6 +36,7 @@ public class HttpOramServerRequester implements OramServerRequester {
 		List<NameValuePair> nvps = new ArrayList<NameValuePair>();
 		nvps.add(new BasicNameValuePair("data", jsonStr));
 		httpPost.setEntity(new UrlEncodedFormEntity(nvps));
+		long t1 = System.currentTimeMillis();
 		CloseableHttpResponse response2 = httpclient.execute(httpPost);
 
 		StringBuilder result = new StringBuilder();
@@ -57,6 +58,7 @@ public class HttpOramServerRequester implements OramServerRequester {
 		} finally {
 			response2.close();
 		}
+		System.out.println(System.currentTimeMillis()-t1);
 		return result.toString();
 	}
 
@@ -137,6 +139,7 @@ public class HttpOramServerRequester implements OramServerRequester {
 
 		ArrayList<Byte> ba = new ArrayList<Byte>();
 		try {
+			System.out.printf("reading %d bytes from the server\n",nodeSize*adds.size());
 			String response = sendData(obj.toJSONString());
 			JSONObject job = (JSONObject) JSONValue.parse(response);
 			response = (String) job.get("response");
@@ -144,7 +147,6 @@ public class HttpOramServerRequester implements OramServerRequester {
 			for (byte b : responseBytes) {
 				ba.add(b);
 			}
-			System.out.printf("reading %d bytes from the server\n",responseBytes.length);
 
 		} catch (Exception e) {
 			e.printStackTrace();

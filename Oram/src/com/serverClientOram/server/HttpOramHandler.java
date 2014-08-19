@@ -115,9 +115,9 @@ public class HttpOramHandler  implements HttpHandler {
 
     public static void main(String args[]) throws  Exception {
         HttpServer server = HttpServer.create(new InetSocketAddress(8000),100);
-        
+        //System.out.println("testing...");
         HttpContext context;
-        if(args[0].equalsIgnoreCase("D")){
+        if( args.length>0 && args[0].equalsIgnoreCase("D")){
         	String path = args[1];//"C:/Users/Chen/Documents/cornell/classes/crypto2/ObliDrive";
         	context = server.createContext("/oram", new HttpOramHandler(new DiskOperator(path,Integer.parseInt(args[2]))));//16640
         }

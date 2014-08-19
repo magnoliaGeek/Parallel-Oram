@@ -27,11 +27,11 @@ public class FileClientCmdLine {
 		if (args.length == 3 && args[1].equals("-p")) {
 			int numRequest = Integer.parseInt(args[2]);
 			PBlockOramClient pboc = new PBlockOramClient(numRequest, 1,
-					1024 * 4, 16, 64, 8, url);
+					1024 * 4, 16, 128, 8, url);
 			ofc = new POramFileClient(pboc);
 			System.out.printf("Parallel mode, %d request per batch.\n",numRequest);
 		} else {
-			BlockOramClient boc = new BlockOramClient(1, 1024 * 4, 16, 64, 8,
+			BlockOramClient boc = new BlockOramClient(1, 1024 * 4, 16, 128, 8,
 					url);
 			ofc = new OramFileClient(boc);
 		}
